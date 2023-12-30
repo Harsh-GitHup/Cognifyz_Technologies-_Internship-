@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto 23%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat (auto-fit , minmax(45%, 1fr));
+    margin: 20px auto 0px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat (auto-fit , minmax(45%, 1fr));
+}
+
+.button1 {
+    padding: 10px;
+    background-color: #4daf51;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #00d9ffe9;
+}
+
+#colorButton {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#colorButton.default {
+    background-color: #0aefba;
+    color: #fff;
+}
+
+/* Color when clicked */
+#colorButton.clicked {
+    background-color: #a8e73c;
+    color: #fff;
+}
+
+#colorButton1 {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#colorButton1.default {
+    background-color: #699c90;
+    color: #fff;
+}
+
+.form-container1 {
+    background-color: #00f895b1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 23% auto;
+}

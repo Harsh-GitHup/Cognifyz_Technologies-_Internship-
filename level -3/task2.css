@@ -1,0 +1,266 @@
+/* Common styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: rgb(31, 202, 145);
+    color: #fff;
+    text-align: center;
+    padding: 1px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    display: flex;
+}
+
+nav {
+    background-color: #22d283;
+    padding: 10px;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.p {
+    text-align: justify;
+}
+
+.heading {
+    padding: 20px;
+    margin: 40px 80px;
+    text-align: center;
+    font-size: x-large;
+    background-color: #48a2da;
+}
+
+.about {
+    text-align: center;
+    position: relative;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.about:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#about {
+    margin-top: 60px;
+}
+
+.container11 {
+    margin: auto 60px;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #7971ea;
+    color:  white;
+    box-shadow: 0 0 1rem #7971ea;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.75rem;
+}
+
+.container {
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.main-heading {
+    color: #012970;
+    font-size: 2.5rem;
+}
+
+.sub-heading {
+    color: #012970;
+    font-size: 1.25rem;
+}
+
+.img11 {
+    filter: drop-shadow(10px 10px 20px rgb(111, 111, 112));
+    margin-left: 190px;
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.highlights {
+    margin: 20px 0;
+}
+
+.qualifications {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+input,textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #18c5d1;
+    color: #fff;
+    cursor: pointer;
+    width: 104%;
+}
+
+button[type="submit"]:hover {
+    background-color: #49cfff;
+}
+
+textarea {
+    height: 100px;
+}
+
+.footer {
+    background-color: #07ae9a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.home__social-icon i {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 254);
+}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 580px) {
+    #menu-icon {
+        display: block;
+        text-align: end;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .footer {
+        width: auto;
+    }
+}
