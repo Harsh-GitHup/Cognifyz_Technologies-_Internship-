@@ -61,7 +61,7 @@
 
 ![screencapture-127-0-0-1-3000-level-3-task1-html-2023-12-31-02_47_47](https://github.com/Harsh-GitHup/Cognifyz_Technologies_Internship/assets/116560172/a0a21f0e-2e47-4f19-a371-5332fc54a60c)
 
-<h2>Task - 1</h2>
+<h2>Task - 2</h2>
 <p>
   <ol>
     <h5>Create a landing page for a web developer internship with the following key elements:</h5>
